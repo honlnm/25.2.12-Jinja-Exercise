@@ -38,8 +38,15 @@ class Story:
 # Here's a story to get you started
 
 
-story = Story(
-    ["place", "noun", "verb", "adjective", "plural_noun"],
-    """Once upon a time in a long-ago {place}, there lived a
+story_word_array = ["place", "noun", "verb", "adjective", "plural_noun"]
+def story_words():
+    story_words = []
+    for word in story_word_array:
+        word.capitalize()
+        story_words.append(word)
+    return story_words
+story_shell = """Once upon a time in a long-ago {place}, there lived a
        large {adjective} {noun}. It loved to {verb} {plural_noun}."""
-)
+story = Story(story_word_array, story_shell)
+
+

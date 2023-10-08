@@ -4,14 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="/static/main.css">
     <title>{%block title%}{%endblock%}</title>
 </head>
 
 <body>
-    {%block body%}
-    {%endblock%}
-    <script src="main.js"></script>
+    <div id="home-body">
+        <h1 id="madlibs_title">MadLibs!</h1>
+        {%block body%}
+        {%endblock%}
+    </div>
+    <script src="/static/main.js"></script>
 </body>
 
 </html>
